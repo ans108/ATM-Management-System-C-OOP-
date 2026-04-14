@@ -49,6 +49,7 @@ do{
         if (cin.fail()) {
             printf("\ninvalid input");
         break;
+        }
         if (a.withdraw(amount)) {
         printf("cash withdraw suuccessfully \n your remaing balance is:%f",a.getbalance());
         }
@@ -62,6 +63,7 @@ do{
         if (cin.fail()) {
             printf("\ninvalid input");
         break;
+        }
         a.deposit(amount);
         printf(" deposit suceefully\nyour total balance is:%f",a.getbalance());
         break;
