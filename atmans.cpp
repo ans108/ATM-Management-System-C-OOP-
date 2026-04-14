@@ -46,16 +46,22 @@ do{
         case 2:
         printf("enter the amount to withdraw");
         cin>>amount;
+        if (cin.fail()) {
+            printf("\ninvalid input");
+        break;
         if (a.withdraw(amount)) {
         printf("cash withdraw suuccessfully \n your remaing balance is:%f",a.getbalance());
         }
         else {
-        printf("your not enough money");
+        printf("you dont have enough money");
         }
         break;
         case 3:
         printf("enter the amount");
         cin>>amount;
+        if (cin.fail()) {
+            printf("\ninvalid input");
+        break;
         a.deposit(amount);
         printf(" deposit suceefully\nyour total balance is:%f",a.getbalance());
         break;
@@ -71,5 +77,5 @@ do{
     cin>>op;
 }while(op=='y'||op=='Y');
 
-  
+
 }
