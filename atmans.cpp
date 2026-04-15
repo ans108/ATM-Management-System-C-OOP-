@@ -37,7 +37,7 @@ do{
     printf("\n2 cash withdraw ");
     printf("\n3 cash deposit");
     printf("\n4 exit");
-    printf("\nenter you choice");
+    printf("\nenter your choice");
     cin >>choice;
     switch(choice){
         case 1:
